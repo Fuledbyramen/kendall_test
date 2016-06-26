@@ -1,0 +1,34 @@
+I"»(function() {
+  var makeid;
+
+  $(function() {
+    var button, trialbutton;
+    button = $('#testbutton');
+    trialbutton = $('#trialbutton');
+    button.on('click', function() {
+      trialbutton.toggleClass('dissapear');
+    });
+  });
+
+  makeid = function() {
+    var i, possible, text;
+    text = '';
+    possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    i = 0;
+    while (i < 5) {
+      text += possible.charAt(Math.floor(Math.random() * possible.length));
+      i++;
+    }
+    return text;
+  };
+
+  $(document).ready(function() {
+    setInterval((function() {
+      $('h1').text(function() {
+        return makeid();
+      });
+    }), 1000);
+  });
+
+}).call(this);
+:ET

@@ -1,0 +1,48 @@
+$thumbnail-padding: 12px;
+
+$navbar-inverse-link-color : #fff;
+$navbar-inverse-bg : transparent;
+
+#mainheading{
+	color : white;
+}
+
+
+#myModalLabel{
+	color : black;
+}
+
+@import "bootstrap-sprockets";
+@import 'bootstrap';
+
+.shadow {
+	text-shadow: 4px 4px 4px #000;
+	}
+
+.strongshadow { 
+	text-shadow: 10px 10px 10px #000;
+	}
+
+
+
+.btn-default,
+.btn-primary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger {
+    -webkit-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:    3px 3px 0px rgba(0, 0, 0, 0.3);
+    box-shadow:         3px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.btn-default:active,
+.btn-primary:active,
+.btn-success:active,
+.btn-info:active,
+.btn-warning:active,
+.btn-danger:active {
+    margin-top: 3px;
+    margin-bottom: -3px;
+}
+

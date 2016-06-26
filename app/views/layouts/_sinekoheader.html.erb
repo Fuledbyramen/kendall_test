@@ -1,0 +1,132 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand strongshadow" href="/sineko/home">&nbsp;Sineko</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="shadow" href="/sineko/pricing">Pricing</a></li>
+        <li><a class="shadow" href="#" data-toggle="modal" data-target="#supportModal">Support</a></li>
+        <li><a class="shadow" href="#" data-toggle="modal" data-target="#loginModal">Log in</a></li>
+        <li><a class="shadow" href="#" data-toggle="modal" data-target="#signupModal">Sign up</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+<!-- Sign Up Modal -->
+<div class="modal fade bs-example-modal-lg" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="form-group">
+              <label for="inputEmail">Username</label>
+              <input type="text" class="form-control" id="inputEmail" placeholder="What's your username?">
+          </div>
+          <div class="form-group">
+              <label for="inputEmail">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Your@Email.com">
+          </div>
+          <div class="form-group">
+              <label for="inputEmail">Email Confirmation</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Once@More.com">
+          </div>
+          <div class="form-group">
+              <label for="inputPassword">Password</label>
+              <input type="password" class="form-control" id="inputPassword" placeholder="Choose a password">
+          </div>
+          <div class="form-group">
+              <label for="inputPassword">Password Confirmation</label>
+              <input type="password" class="form-control" id="inputPassword" placeholder="Password Confirmation">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Sign Up!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Log In Modal -->
+<div class="modal fade bs-example-modal-lg" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Log in</h4>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="form-group">
+              <label for="inputEmail">Username</label>
+              <input type="text" class="form-control" id="inputEmail" placeholder="Username">
+          </div>
+          <div class="form-group">
+              <label for="inputPassword">Password</label>
+              <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+          </div>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Sign Up!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Support Modal -->
+
+<div class="modal fade bs-example-modal-lg" id="supportModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Support Ticket</h4>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="form-group">
+              <label for="inputEmail">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Your email so we can get back to you">
+          </div>
+          <div class="form-group">
+              <label for="inputPassword">Question</label>
+              <textarea rows = "10" type="text" class="form-control" id="inputPassword" placeholder="Your Question!"></textarea>
+          </div>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send</button>
+      </div>
+    </div>
+  </div>
+</div>

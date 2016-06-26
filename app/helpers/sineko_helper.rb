@@ -1,0 +1,2 @@
+module SinekoHelper
+end

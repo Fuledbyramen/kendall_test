@@ -1,0 +1,18 @@
+I"Y(function() {
+  $(function() {
+    var button, trialbutton;
+    button = $('#testbutton');
+    trialbutton = $('#trialbutton');
+    button.on('click', function() {
+      trialbutton.toggleClass('dissapear');
+    });
+  });
+
+  $(document).ready(function() {
+    $('#bottomtext').text(function() {
+      return 'new';
+    });
+  });
+
+}).call(this);
+:ET

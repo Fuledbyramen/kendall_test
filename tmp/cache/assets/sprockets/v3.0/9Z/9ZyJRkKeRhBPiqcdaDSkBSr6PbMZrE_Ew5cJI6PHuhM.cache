@@ -1,0 +1,17 @@
+I"Ž(function() {
+  $(function() {
+    var button, trialbutton;
+    button = $('#learnmorebutton');
+    trialbutton = $('#trialbutton');
+    button.on('click', function() {
+      trialbutton.toggleClass('dissapear');
+      if (trialbutton.hasClass('dissapear')) {
+        button.text('Make this smaller!');
+      } else {
+        button.text('Make this bigger!');
+      }
+    });
+  });
+
+}).call(this);
+:ET

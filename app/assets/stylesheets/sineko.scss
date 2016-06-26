@@ -1,0 +1,142 @@
+// Place all the styles related to the sineko controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+
+
+body {
+  background-image: url(/stars.jpg);
+  /* Resizes image to fill div; retains aspect ratio. */ 
+  background-size: cover;  
+  background-repeat: no-repeat;
+  min-height: 2160px;
+}
+
+@keyframes fade-in1{
+	0% {opacity : 0}
+	20% {opacity : 100}
+	40% {opacity : 100}
+	60% {opacity : 100}
+	80% {opacity : 100}
+	100% {opacity : 100}
+}
+@keyframes fade-in2{
+	0% {opacity : 0}
+	20% {opacity : 0}
+	40% {opacity : 100}
+	60% {opacity : 100}
+	80% {opacity : 100}
+	100% {opacity : 100}
+}
+@keyframes fade-in3{
+	0% {opacity : 0}
+	20% {opacity : 0}
+	40% {opacity : 0}
+	60% {opacity : 100}
+	80% {opacity : 100}
+	100% {opacity : 100}
+}
+@keyframes fade-in4{
+	0% {opacity : 0}
+	20% {opacity : 0}
+	40% {opacity : 0}
+	60% {opacity : 0}
+	80% {opacity : 100}
+	100% {opacity : 100}
+}
+@keyframes fade-in5{
+	0% {opacity : 0}
+	20% {opacity : 0}
+	40% {opacity : 0}
+	60% {opacity : 0}
+	80% {opacity : 0}
+	100% {opacity : 100}
+}
+
+#titleheading{
+	animation-name : fade-in1;
+	animation-duration : 4s;
+}
+
+#learnmorebutton{
+	animation-name : fade-in2;
+	animation-duration : 4s;
+	background-color : #1C354D
+}
+
+#trialbutton{
+	opacity : 20;
+	color : white;
+	background-color : #1365B4;
+	animation-name : fade-in3;
+	animation-duration : 4s;
+	top : 350px;
+}
+
+@keyframes moveleft { 
+	0%   { visibility : visible;}
+    100%  { visibility: hidden;}
+	}
+
+
+.dissapear { 
+	animation-name : moveleft;
+	animation-duration : 4s;
+}
+
+.price {
+	font-size : 2.0em;
+	font-weight : 600;
+	line-height : 0.6em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.pricetext{
+	font-size : 1.0em;
+	font-weight : 700;
+	line-height : 2.6em;
+	font-family: 'Open Sans', sans-serif;
+	color : #2c3e50;
+
+}
+
+.priceunder {
+	font-size : 1.0em;
+	font-weight : 700;
+	line-height : 1em;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+
+#pricingpanelpawn { 
+	animation-name : fade-in1;
+	animation-duration : 4s;
+}
+
+#pricingpanelknight{
+	animation-name : fade-in2;
+	animation-duration : 5s;
+}
+
+#pricingpanelrook{
+	animation-name : fade-in3;
+	animation-duration : 5s;
+}
+
+#pricingpanelking{
+	animation-name : fade-in4;
+	animation-duration : 5s;
+}
+
+#pricingheading{
+	animation-name: fade-in5;
+	animation-duration :6s;
+}
+
+
+#bottomtext {
+	content: hi
+}

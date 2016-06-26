@@ -1,0 +1,14 @@
+I"(function() {
+  $(function() {
+    var button, trialbutton;
+    button = $('#testbutton');
+    trialbutton = $('#trialbutton');
+    button.on('click', function() {
+      trialbutton.toggleClass('dissapear');
+    });
+  });
+
+  $('#bottomtext').html('your new header');
+
+}).call(this);
+:ET

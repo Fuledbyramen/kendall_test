@@ -1,0 +1,12 @@
+I"î(function() {
+  $(function() {
+    var button, trialbutton;
+    button = $('#testbutton');
+    trialbutton = $('#trialbutton');
+    button.on('click', function() {
+      trialbutton.toggleClass('dissapear');
+    });
+  });
+
+}).call(this);
+:ET

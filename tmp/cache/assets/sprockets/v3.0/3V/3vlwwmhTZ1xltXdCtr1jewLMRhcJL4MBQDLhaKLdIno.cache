@@ -1,0 +1,14 @@
+I"4(function() {
+  $(function() {
+    var button, trialbutton;
+    button = $('#testbutton');
+    trialbutton = $('#trialbutton');
+    button.on('click', function() {
+      trialbutton.toggleClass('dissapear');
+    });
+  });
+
+  $document.getElementById("bottomtext").innerHTML = "yourTextHere";
+
+}).call(this);
+:ET
