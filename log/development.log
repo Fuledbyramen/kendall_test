@@ -17455,3 +17455,18 @@ ActionController::RoutingError (No route matches [GET] "/assets/glyphicons-halfl
   Rendered c:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
   Rendered c:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered c:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1590.9ms)
+
+
+Started GET "/sineko/test" for ::1 at 2016-07-11 15:01:54 -0700
+Processing by SinekoController#test as HTML
+  Rendered layouts/_sinekoheader.html.erb (0.0ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered sineko/test.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 249ms (Views: 242.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sineko/index" for ::1 at 2016-07-11 15:01:57 -0700
+Processing by SinekoController#index as HTML
+  Rendered layouts/_sinekoheader.html.erb (0.0ms)
+  Rendered sineko/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 191ms (Views: 190.0ms | ActiveRecord: 0.0ms)
