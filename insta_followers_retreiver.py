@@ -25,10 +25,12 @@ def get_followers():
     conn.commit()
 
 
+get_followers()
 
+'''
 schedule.every().day.at("12:00").do(get_followers)
 while True:
     schedule.run_pending()
     time.sleep(50)
 
-#get_followers()
+'''

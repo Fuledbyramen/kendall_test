@@ -13,11 +13,10 @@ class SinekoController < ApplicationController
     # db.execute("INSERT INTO `Follower_Reporter` (username, followers, datestamp, unix) VALUES ('ventura_vixens', 35, '#{Date.today-1}', 123)")   
 
 
-    @followers = db.execute 'SELECT followers, datestamp FROM Follower_Reporter where username="ventura_vixens" '
+    @followers = db.execute 'SELECT followers, datestamp FROM Follower_Reporter where username="ventura_vixens"'
     @result = {}
     @followers.each { |row| @result[row[1]] = row[0] }
-
-    
+    byebug
   end
 
 end
