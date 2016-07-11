@@ -26,6 +26,7 @@ gem 'devise', '~> 4.1.1'
 gem 'bootstrap-sass', '= 3.3.4.1'
 gem 'sass', '~> 3.3'
 gem 'chartkick', '~> 1.2.4'
+gem 'groupdate', '~> 2.1.1'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
