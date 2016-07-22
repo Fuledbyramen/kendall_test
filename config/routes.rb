@@ -2,18 +2,12 @@ Rails.application.routes.draw do
   devise_for :users
   get 'sineko/index'
   get 'sineko/dashboard'
-
   get 'sineko/test'
-
   get 'sineko/support'
-
   get 'sineko/pricing'
-
   root :to => "sineko#home"
   get 'sineko/home'
-
   get 'pages/test'
-
   get 'pages/home'
 
   # The priority is based upon order of creation: first created -> highest priority.

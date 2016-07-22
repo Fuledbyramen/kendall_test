@@ -1,19 +1,27 @@
 <%= render 'layouts/sinekoheader' %>
 
-<div class="container">
-	<div class="row">
-		<h1 class="text-center" style="color:white;">Welcome To Your Dashboard, #User!</h1>
+	<div  style="float: left; width: 40%">
+		<%= render 'layouts/sidebar' %>
 	</div>
-	<div class="row">
-		<div class="col-sm-12 col-md-12 col-lg-12">
-			<div class="panel panel-default" id="pricingpanelpawn">
-				<div class="panel-heading">
-					<h1 class="panel-title text-center">Let's Take A Look At How You've Been Doing!</h1>
-				</div>
-				<div class="panel-body" id="price-panel-pawn">
-					<a href="#" class="thumbnail">
-			    		<img src="/test.jpg" alt="...">
-			    	</a>
-				</div>
+
+<div class="container-fluid">
+
+
+	<div class="">
+		<div class="jumbotron"  style="float: right; width: 60%">
+			<h1>Hello, world!</h1>
+			<p>...</p>
+			<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+
+				<div>
+	    		<h3>Followers Gained</h3>
+	    		<%= line_chart @result, discrete: true %>
+
+	  			</div>
 		</div>
+
+
 	</div>
+
+
+</div>

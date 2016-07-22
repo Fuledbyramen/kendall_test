@@ -3,16 +3,144 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-
-
-
-body {
-  background-image: url(/stars.jpg);
+#homepage{
+	background-image: url(/stars_cropped.jpg);
   /* Resizes image to fill div; retains aspect ratio. */ 
   background-size: cover;  
   background-repeat: no-repeat;
-  min-height: 2160px;
+  margin-bottom:10px;
+  height : 1000px;
+  box-sizing: border-box;
+  width : 100%;
+  margin-bottom: 0px;
 }
+.container-nav{
+	margin-right:auto;
+	margin-left:auto;
+	margin-left:0px;
+	margin-right:5px;
+}
+
+#nav-logo{
+	margin-top : 10px;
+}
+#home-top {
+  background-image: url(/stars_cropped.jpg);
+  /* Resizes image to fill div; retains aspect ratio. */ 
+  background-size: cover;  
+  background-repeat: no-repeat;
+  margin-bottom:10px;
+  height : 100%;
+  box-sizing: border-box;
+  width : 100%;
+  margin-bottom: 0px;
+
+
+ }
+
+#logo{
+	height: 200px;
+	width: 500px;
+	text-align:left;
+	margin-bottom:10px
+}
+.home_container {
+ 	max-width : 1000px;
+ 	margin: 0 auto;
+ }
+
+#home-bottom {
+	background-color :white;
+}
+
+#footer{
+	background-color : white;
+}
+
+.footer-button{
+	border : 0px;
+	border-radius:0px;
+}
+
+.footer-list{
+	color: #428bca;
+	font-size: 75%;
+}
+
+.footer-heading{
+	font-weight: 500;
+}
+
+.liscense{
+	background-color: #15202b;
+	padding: .75rem;
+	margin: 0;
+	height: 50px;
+	height: 100%;
+}
+
+.liscense-text{
+	
+	color: #5c6771;
+	font-weight: 100;
+	margin: 0;
+	font-size: 20px;
+
+}
+
+.icon {
+	border-radius: 4rem;
+	background-color: #1365B4;
+	color: #fff;
+	font-size: 3em;
+	display: inline-block;
+	height : 8rem;
+	width :  8rem;
+	margin-bottom: 1rem;
+	margin: 0 auto;
+	text-align: center!important;
+}
+
+.icon-text {
+	height : 40%;
+	vertical-align: middle;
+}
+
+.icon-number{
+	margin-top: 9px;
+
+}
+.icon-heading-text-5 {
+	font-weight: 700;
+	font-size :  150%;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+}
+
+.icon-heading-text-6 {
+	font-weight: 500;
+	font-size :  125%;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	margin: 0;
+	max-width: 300px;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+.heading_text{
+	font-size : 200%;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+
+}
+.full-width{
+	width:100%;
+}
+
+#bottom-steps{
+	background-color: #1C354D;
+	color: white;
+}
+
 
 @keyframes fade-in1{
 	0% {opacity : 0}
@@ -64,6 +192,16 @@ body {
 	animation-name : fade-in2;
 	animation-duration : 4s;
 	background-color : #1C354D
+}
+
+.italic{
+	font-style : italic;
+}
+
+.home-text{
+	font-family : "Times New Roman";
+	line-height : 1.5;
+	font-weight: 500;
 }
 
 #trialbutton{
@@ -141,5 +279,16 @@ body {
 	content: hi
 }
 
+.tab {
+	width : 50%;
+}
 
+.tab_button {
+	width : 100%;
+	border : 0px;
+	border-radius:0px;
+}
 
+.white {
+	color:white;
+}

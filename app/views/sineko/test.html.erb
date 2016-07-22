@@ -1,26 +1,163 @@
-<%= render 'layouts/sinekoheader' %>
+<div class="container-fluid" id="home-top" >
 
-	<div>
-		<%= render 'layouts/sidebar' %>
+	<%= render 'layouts/sinekoheader' %>
+
+	<div class="row">
+		<p>&nbsp;</p>
 	</div>
+	<div class = "row home_container">
+		<div class = "col-md-7">
+		<div class="row">
+			  <div class = "col-md-12 strongshadow" id="titleheading">
+			    <div style="float:left;"><img id="logo" src="/300dpiprint.png" alt="..." /></div>
+			    <p>&nbsp;</p>
+			    <h2 class="text-center italic" style="font-size:22px; font-weight: 500;" id=mainheading>Social Media Marketing</h1>
+			  </div>
+			</div>
 
-<div class="container-fluid">
-
-
-	<div class="col-sm-8 col-sm-push-4  col-md-8 col-md-push-3">
-		<div class="jumbotron">
-			<h1>Hello, world!</h1>
-			<p>...</p>
-			<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
 			<div>
-	    		<h3>Followers Gained</h3>
-	    		<%= line_chart @result, discrete: true %>
-
-	  		</div>
+				<h4 class="white shadow home-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The fastest and most reliable instagram bot, paired with the best instagram analytics possible. Allowing you to grow your social media brand faster ever possible. Sineko offers you the followers, likes and most importantly, engagement, 24/7. Plans start at only $6/Month and allows you full access to our dashboard. Get to know who follows you and how to target them better.</h4>
+			</div>
 		</div>
 
 
+
+		<div class = "col-md-5">
+			<div class="tab" style="float: left; width : 50%;">
+				<a id="learnmorebutton" href = "#learnmoretext" class="btn btn-primary btn-lg tab_button" role="button">Learn More</a>
+			</div>
+
+			<div class="tab" style="float: right;">
+				<a id="trialbutton" href = "#" class="btn btn-primary btn-lg tab_button" data-toggle="modal" data-target="#signupModal" role="button">Free Trial</a>
+			</div>
+			<div>
+				<p>&nbsp;</p>
+				<h4 style="color:white;" class="strongshadow text-center">New to Sineko? Start your three day free trial!</h4>
+			</div>
+
+			<div>
+			    <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+			      <%= devise_error_messages! %>
+
+			      <div class="form-group white strongshadow">
+			        <%= f.label :name %>
+			        <%= f.text_field :name, autofocus: true, class: "form-control" %>
+			      </div>
+
+			      <div class="form-group white strongshadow">
+			        <%= f.label :email %>
+			        <%= f.email_field :email, autofocus: true, class: "form-control" %>
+			      </div>
+
+			      <div class="form-group white strongshadow">
+			        <%= f.label :password %>
+			        <%= f.password_field :password, class: "form-control" %>
+			      </div>
+
+			      <p>&nbsp;</p>
+
+			      <div class="form-group">
+			        <%= f.submit "Sign up", class: "btn btn-primary btn-lg tab_button" %>
+			      </div>
+			    <% end %>
+			</div>
+		</div>
 	</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
 
+<div class="container-fluid" id="home-bottom">
+	<div class="row home_container text-center">
+		<h2 id="learnmoretext" class="heading_text">What do I get with Sineko?</h2>
+		<p>&nbsp;</p>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="icon">
+					<i class="glyphicon glyphicon-refresh icon-text" aria-hidden="true"></i>
+				</div>
+				<h5 class="icon-heading-text-5">We grow your engagement</h5>
+				<h6 align="center" class="icon-heading-text-6 full-width">Sineko not only grows your following, but more importantly, your engagement. Helping you build a tightly knit community through Instagram.</h6>
+				<p>&nbsp;</p>
+			</div>
 
+			<div class="col-md-3">
+				<div class="icon">
+					<i class="glyphicon glyphicon-globe icon-text" aria-hidden="true"></i>
+				</div>
+				<h5 class="icon-heading-text-5">Reach any audience you want</h5>
+				<h6 class="icon-heading-text-6">Sineko allows you to specify what audience and what hashtags you want to target, allowing you to reach all of Instagram.</h6>
+				<p>&nbsp;</p>
+			</div>
+
+			<div class="col-md-3">
+				<div class="icon">
+					<i class="glyphicon glyphicon-tasks icon-text" aria-hidden="true"></i>
+				</div>
+				<h5 class="icon-heading-text-5">Knowledge is power</h5>
+				<h6 class="icon-heading-text-6">When you sign up with Sineko, you get access to our dashboard, which displays information about your audience and your progress.</h6>
+				<p>&nbsp;</p>
+			</div>
+
+			<div class="col-md-3">
+				<div class="icon">
+					<i class="glyphicon glyphicon-fullscreen icon-text" aria-hidden="true"></i>
+				</div>
+				<h5 class="icon-heading-text-5">Expand your reach</h5>
+				<h6 class="icon-heading-text-6">Instagram is the largest growing social media platform, so standing out is getting harder and harder, Sineko makes sure more people </h6>	
+				<p>&nbsp;</p>		
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid" id="bottom-steps">
+	<div class="row home_container text-center">
+		<h2 class="text-center">How do I start / How much is it?</h2>
+		<div class="col-md-4">
+			<div class="icon">
+				<p class="icon-number">1</p>
+			</div>
+			<h5 class="icon-heading-text-5">First you sign up</h5>
+			<h6 class="icon-heading-text-6">Signing up takes less than five minutes and plans start as low as six dollars a month!</h6>
+			<p>&nbsp;</p>
+		</div>
+		<div class="col-md-4">
+			<div class="icon">
+				<p class="icon-number">2</p>
+			</div>
+			<h5 class="icon-heading-text-5">Set up your account</h5>
+			<h6 class="icon-heading-text-6">Instagram is a big place, we need to be able to know exactly what market you want to cover, help us know what users you want us to target.</h6>
+			<p>&nbsp;</p>
+		</div>
+		<div class="col-md-4">
+			<div class="icon">
+				<p class="icon-number">3</p>
+			</div>
+			<h5 class="icon-heading-text-5">Enjoy the followers and learn with our dashboard!</h5>
+			<h6 class="icon-heading-text-6">Being a member of Sineko allows you to access to our dashboard which gives you an incredible amount of information to improve your buisness.</h6>
+			<p>&nbsp;</p>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid" id = "footer">
+	<div class="row home_container text-center">
+		<p>&nbsp;</p>
+		<h2 class="footer-heading">Start now with our free three day trial!</h2>
+		<p>&nbsp;</p>
+		<a href = "/users/sign_up" class="btn btn-primary btn-lg footer-button" role="button">Try It Now For Free!</a>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		
+
+		<a href="/sineko/pricing"><i class="glyphicon glyphicon-usd footer-list" aria-hidden="true"></i>Pricing&nbsp;</a>
+        <a href="#" data-toggle="modal" data-target="#supportModal"><i class="glyphicon glyphicon-envelope footer-list" aria-hidden="true"></i>Support&nbsp;</a>
+        <a href="/users/sign_in"><i class="glyphicon glyphicon-user footer-list" aria-hidden="true"></i>Log in&nbsp;</a>
+        <a href="/users/sign_up"><i class="glyphicon glyphicon-pencil footer-list" aria-hidden="true"></i>Sign up&nbsp;</a>
+        <p>&nbsp;</p>
+	</div>
+</div>
+<div class="liscense full-width text-center">
+	<h5 class="liscense-text">PRIVACY POLICY | EULA &nbsp; &nbsp; &nbsp; @ 2016 Sineko.Co, All Rights Reserved.</h5>
 </div>
